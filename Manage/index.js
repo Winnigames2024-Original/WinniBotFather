@@ -35,15 +35,16 @@ if (chat_id)
             return null;
         }
 
-        function acceptCookies() {
+        function acceptUserCookies() {
             setCookie('cookieAccepted', 'true', 30); // Set cookie for 30 days
             document.getElementById('cookieConsent').style.display = 'none';
         }
 
-        function rejectCookies() {
-            alert("You have rejected cookies. Some functionalities might be limited.");
+        function rejectUserCookies() {
+            alert("You have rejected cookies. App features have been disabled, restarting the app...");
             document.getElementById('cookieConsent').style.display = 'none';
-            // You might implement further actions here, like limiting certain features
+            alert("Restarting the app...")
+            location.href = location.href
         }
 
         // Check if cookie consent has been given on page load
