@@ -36,7 +36,7 @@ if (chat_id)
         }
 
         function acceptUserCookies() {
-            setCookie('cookieAccepted', 'true', 30); // Set cookie for 30 days
+            setCookie('appCookiesAccepted', 'true', 1); // Set cookie for 30 days
             document.getElementById('cookieConsent').style.display = 'none';
         }
 
@@ -49,7 +49,7 @@ if (chat_id)
 
         // Check if cookie consent has been given on page load
         window.onload = function() {
-            if (!getCookie('cookieAccepted')) {
+            if (!getCookie('appCookiesAccepted')) {
                 document.getElementById('cookieConsent').style.display = 'block';
             }
         };
