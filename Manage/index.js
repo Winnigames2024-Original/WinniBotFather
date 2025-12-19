@@ -6,7 +6,7 @@ if (chat_id)
 {
   if (telegram_reg_id) 
   {
-    alert("WinniBotFather.TelegramChatId('" + chat_id + "'); " + "WinniBotFather.TelegramRegId('" + telegram_reg_id + "')")
+    alert("WinniBotFather.TelegramChatId('" + chat_id + "'); " + "WinniBotFather.TelegramRegId('" + telegram_reg_id + "'); ")
   }
 }
 
