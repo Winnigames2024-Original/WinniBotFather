@@ -1,0 +1,46 @@
+
+
+<html>
+  <style>
+        /* Basic styling for the cookie banner */
+        #cookieConsent {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            display: none; /* Hidden by default */
+            z-index: 1000;
+        }
+        #cookieConsent button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+    </style>
+  <head>
+    <title>WinniBotFather | Telegram bot maker</title>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script type="text/javascript" src="index.js"></script>
+  </head>
+  <body>
+    <div id="actionElement"></div>
+    <!-- Your website content goes here -->
+    <h1>Welcome to WinniBotFather | Telegram bot maker</h1>
+    <p>Click button New Bot to create new bot.</p>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent">
+        This website uses cookies to ensure you get the best experience.
+        <button onclick="acceptCookies()">Accept</button>
+        <button onclick="rejectCookies()">Reject</button>
+    </div>
+  </body>
+</html>
